@@ -62,5 +62,7 @@ python metabinner.py \
 --output ${output_dir}/metabinner_res/result.tsv \
 --log ${output_dir}/metabinner_res/result.log \
 --threads 40
+
+#The file "result.tsv.2.tsv.add_remained_after_dastool.tsv" in the "${output_dir}/metabinner_res" is the final output.
 ```
 
