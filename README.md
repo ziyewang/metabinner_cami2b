@@ -7,11 +7,11 @@ GitHub repository for binning CAMI2b challenge dataset using MetaBinner
 
 We recommend using conda to run MetaBinner.
 
-### <a name="docker"></a>Obtain SolidBin and create an environment
+### <a name="docker"></a>Obtain codes and create an environment
 After installing Anaconda (or miniconda), fisrt obtain MetaBinner:
 
 ```sh
-git clone https://github.com/sufforest/SolidBin
+git clone https://github.com/ziyewang/metabinner_cami2b
 ```
 Then simply create a metabinner_cami2b environment 
 
