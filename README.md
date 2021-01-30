@@ -43,9 +43,11 @@ checkm data setRoot .
 
 An example:
 ```sh
+#Filter short contigs and generate kmer profiles:
 python scripts/filter_tooshort_for_contig_file.py test_data/Sim40_20_ori/input/final_contigs.fa 999
-python scripts/gen_kmer.py test_data/Sim40_20_ori/input/final_contigs_f1k.fa 999 4
+python scripts/gen_kmer.py test_data/Sim40_20_ori/input/final_contigs.fa 999 4
 
+#path to the input files for metabinner and the output dir:
 contig_file=test_data/Sim40_20_ori/input/final_contigs_f1k_999.fa
 kmer_files=test_data/Sim40_20_ori/input/kmer_4_f999.csv
 coverage_profiles=test_data/Sim40_20_ori/input/Coverage_f1k.tsv
