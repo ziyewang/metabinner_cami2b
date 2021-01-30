@@ -40,3 +40,25 @@ wget https://data.ace.uq.edu.au/public/CheckM_databases/checkm_data_2015_01_16.t
 tar xzf checkm_data_2015_01_16.tar.gz 
 checkm data setRoot .
 ```
+
+An example:
+```sh
+python scripts/filter_tooshort_for_contig_file.py test_data/Sim40_20_ori/input/final_contigs.fa 999
+python scripts/gen_kmer.py test_data/Sim40_20_ori/input/final_contigs_f1k.fa 999 4
+
+contig_file=test_data/Sim40_20_ori/input/final_contigs.fa
+kmer_files=test_data/Sim40_20_ori/input/kmer_4_f999.csv
+coverage_profiles=test_data/Sim40_20_ori/input/Coverage_f1k.tsv
+output_dir=test_data/Sim40_20_ori/output
+
+mkdir ${output_dir}/metabinner_res
+
+python metabinner.py \
+--contig_file ${contig_file} \
+--coverage_profiles ${coverage_profiles} \
+--composition_profiles ${kmer_files} \
+--output ${output_dir}/metabinner_res/result.tsv \
+--log ${output_dir}/metabinner_res/result.log \
+--threads 40
+```
+
