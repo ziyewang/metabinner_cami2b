@@ -1,0 +1,38 @@
+components_path=$1
+
+echo "kmeans_notrans_seed_partial_ori_with_postprocess.tsv,${components_path}/kmeans_notrans_seed_partial_ori_with_postprocess.tsv_bins"  >> ${components_path}.X_t_notrans_bin_dirs.tsv
+echo "partial_seed_kmeans_bacar_marker_seed_length_weight_1quarter_X_t_notrans_result.tsv,${components_path}/partial_seed_kmeans_bacar_marker_seed_length_weight_1quarter_X_t_notrans_result.tsv_bins"  >> ${components_path}.X_t_notrans_bin_dirs.tsv
+echo "partial_seed_kmeans_bacar_marker_seed_length_weight_2quarter_X_t_notrans_result.tsv,${components_path}/partial_seed_kmeans_bacar_marker_seed_length_weight_2quarter_X_t_notrans_result.tsv_bins"  >> ${components_path}.X_t_notrans_bin_dirs.tsv
+echo "partial_seed_kmeans_bacar_marker_seed_length_weight_3quarter_X_t_notrans_result.tsv,${components_path}/partial_seed_kmeans_bacar_marker_seed_length_weight_3quarter_X_t_notrans_result.tsv_bins"  >> ${components_path}.X_t_notrans_bin_dirs.tsv
+echo "partial_seed_kmeans_marker1_seed_length_weight_1quarter_X_t_notrans_result.tsv,${components_path}/partial_seed_kmeans_marker1_seed_length_weight_1quarter_X_t_notrans_result.tsv_bins"  >> ${components_path}.X_t_notrans_bin_dirs.tsv
+echo "partial_seed_kmeans_marker1_seed_length_weight_2quarter_X_t_notrans_result.tsv,${components_path}/partial_seed_kmeans_marker1_seed_length_weight_2quarter_X_t_notrans_result.tsv_bins"  >> ${components_path}.X_t_notrans_bin_dirs.tsv
+echo "partial_seed_kmeans_marker1_seed_length_weight_3quarter_X_t_notrans_result.tsv,${components_path}/partial_seed_kmeans_marker1_seed_length_weight_3quarter_X_t_notrans_result.tsv_bins"  >> ${components_path}.X_t_notrans_bin_dirs.tsv
+
+echo "kmeans_logtrans_seed_partial_ori_with_postprocess.tsv,${components_path}/kmeans_logtrans_seed_partial_ori_with_postprocess.tsv_bins"  >> ${components_path}.X_t_logtrans_bin_dirs.tsv
+echo "partial_seed_kmeans_bacar_marker_seed_length_weight_1quarter_X_t_logtrans_result.tsv,${components_path}/partial_seed_kmeans_bacar_marker_seed_length_weight_1quarter_X_t_logtrans_result.tsv_bins"  >> ${components_path}.X_t_logtrans_bin_dirs.tsv
+echo "partial_seed_kmeans_bacar_marker_seed_length_weight_2quarter_X_t_logtrans_result.tsv,${components_path}/partial_seed_kmeans_bacar_marker_seed_length_weight_2quarter_X_t_logtrans_result.tsv_bins"  >> ${components_path}.X_t_logtrans_bin_dirs.tsv
+echo "partial_seed_kmeans_bacar_marker_seed_length_weight_3quarter_X_t_logtrans_result.tsv,${components_path}/partial_seed_kmeans_bacar_marker_seed_length_weight_3quarter_X_t_logtrans_result.tsv_bins"  >> ${components_path}.X_t_logtrans_bin_dirs.tsv
+echo "partial_seed_kmeans_marker1_seed_length_weight_1quarter_X_t_logtrans_result.tsv,${components_path}/partial_seed_kmeans_marker1_seed_length_weight_1quarter_X_t_logtrans_result.tsv_bins"  >> ${components_path}.X_t_logtrans_bin_dirs.tsv
+echo "partial_seed_kmeans_marker1_seed_length_weight_2quarter_X_t_logtrans_result.tsv,${components_path}/partial_seed_kmeans_marker1_seed_length_weight_2quarter_X_t_logtrans_result.tsv_bins"  >> ${components_path}.X_t_logtrans_bin_dirs.tsv
+echo "partial_seed_kmeans_marker1_seed_length_weight_3quarter_X_t_logtrans_result.tsv,${components_path}/partial_seed_kmeans_marker1_seed_length_weight_3quarter_X_t_logtrans_result.tsv_bins"  >> ${components_path}.X_t_logtrans_bin_dirs.tsv
+
+echo "kmeans_notrans_X_cov_seed_partial_ori_with_postprocess.tsv,${components_path}/kmeans_notrans_X_cov_seed_partial_ori_with_postprocess.tsv_bins"  >> ${components_path}.X_cov_notrans_bin_dirs.tsv
+echo "partial_seed_kmeans_bacar_marker_seed_length_weight_1quarter_X_cov_notrans_result.tsv,${components_path}/partial_seed_kmeans_bacar_marker_seed_length_weight_1quarter_X_cov_notrans_result.tsv_bins"  >> ${components_path}.X_cov_notrans_bin_dirs.tsv
+echo "partial_seed_kmeans_bacar_marker_seed_length_weight_2quarter_X_cov_notrans_result.tsv,${components_path}/partial_seed_kmeans_bacar_marker_seed_length_weight_2quarter_X_cov_notrans_result.tsv_bins"  >> ${components_path}.X_cov_notrans_bin_dirs.tsv
+echo "partial_seed_kmeans_bacar_marker_seed_length_weight_3quarter_X_cov_notrans_result.tsv,${components_path}/partial_seed_kmeans_bacar_marker_seed_length_weight_3quarter_X_cov_notrans_result.tsv_bins"  >> ${components_path}.X_cov_notrans_bin_dirs.tsv
+echo "partial_seed_kmeans_marker1_seed_length_weight_1quarter_X_cov_notrans_result.tsv,${components_path}/partial_seed_kmeans_marker1_seed_length_weight_1quarter_X_cov_notrans_result.tsv_bins"  >> ${components_path}.X_cov_notrans_bin_dirs.tsv
+echo "partial_seed_kmeans_marker1_seed_length_weight_2quarter_X_cov_notrans_result.tsv,${components_path}/partial_seed_kmeans_marker1_seed_length_weight_2quarter_X_cov_notrans_result.tsv_bins"  >> ${components_path}.X_cov_notrans_bin_dirs.tsv
+echo "partial_seed_kmeans_marker1_seed_length_weight_3quarter_X_cov_notrans_result.tsv,${components_path}/partial_seed_kmeans_marker1_seed_length_weight_3quarter_X_cov_notrans_result.tsv_bins"  >> ${components_path}.X_cov_notrans_bin_dirs.tsv
+
+echo "kmeans_logtrans_X_cov_seed_partial_ori_with_postprocess.tsv,${components_path}/kmeans_logtrans_X_cov_seed_partial_ori_with_postprocess.tsv_bins"  >> ${components_path}.X_cov_logtrans_bin_dirs.tsv
+echo "partial_seed_kmeans_bacar_marker_seed_length_weight_1quarter_X_cov_logtrans_result.tsv,${components_path}/partial_seed_kmeans_bacar_marker_seed_length_weight_1quarter_X_cov_logtrans_result.tsv_bins"  >> ${components_path}.X_cov_logtrans_bin_dirs.tsv
+echo "partial_seed_kmeans_bacar_marker_seed_length_weight_2quarter_X_cov_logtrans_result.tsv,${components_path}/partial_seed_kmeans_bacar_marker_seed_length_weight_2quarter_X_cov_logtrans_result.tsv_bins"  >> ${components_path}.X_cov_logtrans_bin_dirs.tsv
+echo "partial_seed_kmeans_bacar_marker_seed_length_weight_3quarter_X_cov_logtrans_result.tsv,${components_path}/partial_seed_kmeans_bacar_marker_seed_length_weight_3quarter_X_cov_logtrans_result.tsv_bins"  >> ${components_path}.X_cov_logtrans_bin_dirs.tsv
+echo "partial_seed_kmeans_marker1_seed_length_weight_1quarter_X_cov_logtrans_result.tsv,${components_path}/partial_seed_kmeans_marker1_seed_length_weight_1quarter_X_cov_logtrans_result.tsv_bins"  >> ${components_path}.X_cov_logtrans_bin_dirs.tsv
+echo "partial_seed_kmeans_marker1_seed_length_weight_2quarter_X_cov_logtrans_result.tsv,${components_path}/partial_seed_kmeans_marker1_seed_length_weight_2quarter_X_cov_logtrans_result.tsv_bins"  >> ${components_path}.X_cov_logtrans_bin_dirs.tsv
+echo "partial_seed_kmeans_marker1_seed_length_weight_3quarter_X_cov_logtrans_result.tsv,${components_path}/partial_seed_kmeans_marker1_seed_length_weight_3quarter_X_cov_logtrans_result.tsv_bins"  >> ${components_path}.X_cov_logtrans_bin_dirs.tsv
+
+sed -i "s/,/\t/g" ${components_path}.X_t_logtrans_bin_dirs.tsv
+sed -i "s/,/\t/g" ${components_path}.X_t_notrans_bin_dirs.tsv
+sed -i "s/,/\t/g" ${components_path}.X_cov_logtrans_bin_dirs.tsv
+sed -i "s/,/\t/g" ${components_path}.X_cov_notrans_bin_dirs.tsv

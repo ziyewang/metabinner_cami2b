@@ -740,7 +740,7 @@ def recluster_other_contigs(not_clustered_path, X_t, namelist, mapObj, length_we
         km = KMeans(n_clusters=bin_number, n_jobs=-1, n_init=30, random_state=7)
 
     logger.info("Start bin the other bins.")
-    #
+    # 之后可以加GC，像binsanity那样
     km.fit(X_t_unclustered, sample_weight=unclassified_contigs_weight)
     idx = km.labels_
     not_clustered_path_output = not_clustered_path + 'reclustered_result.tsv'
