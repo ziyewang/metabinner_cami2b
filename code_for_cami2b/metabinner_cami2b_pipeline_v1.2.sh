@@ -119,8 +119,6 @@ wait
 #bin_dirs_file = sys.argv[4]
 #output_dir= sys.argv[5]
 
-
-
 #gen_callback
 
 python ${metabinner_path}/code_for_cami2b/maxbin_to_bin_zy.py \
