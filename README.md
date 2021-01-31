@@ -58,7 +58,7 @@ mkdir ${output_dir}/metabinner_res
 bash ${metabinner_path}/code_for_cami2b/metabinner_cami2b_pipeline_v1.2.sh ${contig_file} ${output_dir} ${coverage_profiles} ${kmer_profile} ${metabinner_path}
 
 
-#The file "final_result_combo_my_pipeline2.tsv" in the "${output_dir}/metabinner_res" is the final output.
+#The file "final_result_combo_greedy_combo2_mypipeline.tsv" in the "${output_dir}/metabinner_res" is the final output.
 ```
 
 
