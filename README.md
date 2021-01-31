@@ -44,26 +44,21 @@ checkm data setRoot .
 An example:
 ```sh
 #Filter short contigs and generate kmer profiles:
-python scripts/filter_tooshort_for_contig_file.py test_data/Sim40_20_ori/input/final_contigs.fa 999
-python scripts/gen_kmer.py test_data/Sim40_20_ori/input/final_contigs.fa 999 4
+python scripts/filter_tooshort_for_contig_file.py test_data/final_contigs.fa 999
+python scripts/gen_kmer.py test_data/final_contigs.fa 999 4
 
 #path to the input files for metabinner and the output dir:
-contig_file=test_data/Sim40_20_ori/input/final_contigs_f1k_999.fa
-kmer_files=test_data/Sim40_20_ori/input/kmer_4_f999.csv
-coverage_profiles=test_data/Sim40_20_ori/input/Coverage_f1k.tsv
-output_dir=test_data/Sim40_20_ori/output
+contig_file=test_data/final_contigs_999.fa
+kmer_files=test_data/kmer_4_f999.csv
+coverage_profiles=test_data/Coverage_f1k.tsv
+output_dir=test_data/output
 
 mkdir ${output_dir}/metabinner_res
 
-python metabinner.py \
---contig_file ${contig_file} \
---coverage_profiles ${coverage_profiles} \
---composition_profiles ${kmer_files} \
---output ${output_dir}/metabinner_res/result.tsv \
---log ${output_dir}/metabinner_res/result.log \
---threads 40
+bash ${metabinner_path}/code_for_cami2b/metabinner_cami2b_pipeline_v1.1.sh ${contig_file} ${output_dir} ${coverage_profiles} ${kmer_profile} ${metabinner_path}
 
-#The file "result.tsv.2.tsv.add_remained_after_dastool.tsv" in the "${output_dir}/metabinner_res" is the final output.
+
+#The file "final_result_combo_my_pipeline2.tsv" in the "${output_dir}/metabinner_res" is the final output.
 ```
 
 
