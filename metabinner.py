@@ -740,7 +740,7 @@ def recluster_other_contigs(not_clustered_path, X_t, namelist, mapObj, length_we
         km = KMeans(n_clusters=bin_number, n_jobs=-1, n_init=30, random_state=7)
 
     logger.info("Start bin the other bins.")
-    # 之后可以加GC，像binsanity那样
+
     km.fit(X_t_unclustered, sample_weight=unclassified_contigs_weight)
     idx = km.labels_
     not_clustered_path_output = not_clustered_path + 'reclustered_result.tsv'
@@ -957,7 +957,7 @@ if __name__ == '__main__':
             args.output) + '/kmeans_length_weight_X_cov_logtrans_result'
         checkm_post_precess(kmeans_initial_output, kmeans_initial_output_dir, prefix='logtrans_X_cov')
 
-
+    """
     run_dastool(intermediate_result_dir, output, dir_name="/das_tool_output_all",
                 search_engine=args.search_engine_for_dastool,partial_flag=None)
     run_dastool(intermediate_result_dir, output, dir_name="/das_tool_output_notrans",
@@ -1019,4 +1019,5 @@ if __name__ == '__main__':
             if contig_id not in clustered_contig_id:
                 fo.write(contig_id + "\t" + str(line.rstrip('\n').split('\t')[1]) + "\n")
     fo.close()
+    """
 
