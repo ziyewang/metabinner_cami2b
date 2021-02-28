@@ -52,6 +52,13 @@ pplacer (>=1.1)
 ;guppy, which is part of the pplacer package, must also be on your system path;
 pplacer binaries can be found on the pplacer GitHub page
 
+or you can install the dependencies as follows:
+```sh
+conda install -c bioconda prodigal
+conda install -c bioconda hmmer 
+conda install -c bioconda pplacer
+```
+
 An example:
 ```sh
 #Filter short contigs and generate kmer profiles:
