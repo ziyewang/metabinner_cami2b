@@ -41,6 +41,15 @@ tar xzf checkm_data_2015_01_16.tar.gz
 checkm data setRoot .
 ```
 
+CheckM requires the following programs to be added to your system path:
+
+HMMER (>=3.1b1)
+prodigal (2.60 or >=2.6.1)
+executable must be named prodigal and not prodigal.linux
+pplacer (>=1.1)
+guppy, which is part of the pplacer package, must also be on your system path
+pplacer binaries can be found on the pplacer GitHub page
+
 An example:
 ```sh
 #Filter short contigs and generate kmer profiles:
